@@ -793,3 +793,71 @@ footer {
         height: calc(100% - 28px)
     }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .topbar nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .hero {
+        display: block;
+        padding: 35px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-card {
+        margin-top: 25px;
+    }
+
+    .section {
+        padding: 30px 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filters {
+        display: block;
+    }
+
+    .filters .input {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .cart-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .order-card {
+        grid-template-columns: 1fr;
+    }
+}
