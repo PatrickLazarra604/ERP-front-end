@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login | TechTindahan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login">
+    <div class="loginCard"><a class="logo" href="index.html">Tech<span>Tindahan</span></a>
+        <h1>Login</h1>
+        <form id="login"><label>Email<input id="email" required></label><label>Password<input id="pass" type="password"
+                    required></label><button class="btn">Login</button></form>
+        <div class="demo">Admin: admin@techtindahan.com / admin123<br>Customer: customer@example.com / 123456</div>
+    </div>
+    <script>login.onsubmit = e => { e.preventDefault(); location.href = email.value === 'admin@techtindahan.com' ? 'admin/dashboard.html' : 'index.html' }</script>
+</body>
+
+</html>
