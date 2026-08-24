@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reports | ERP</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="admin">
+        <aside class="side"><a class="logo" href="dashboard.html">CoreTech</a><a href="dashboard.html">📊
+                Dashboard</a><a href="products.html">📦 Products</a><a href="inventory.html">🏷️ Inventory</a><a
+                href="orders.html">🛒 Orders</a><a href="customers.html">👥 Customers</a><a href="suppliers.html">🚚
+                Suppliers</a><a href="sales.html">💰 Sales</a><a class="active" href="reports.html">📈 Reports</a><a
+                href="../index.html">🛍️ Store</a></aside>
+        <main class="dash">
+            <p>CoreTech ERP</p>
+            <h1>Reports & Analytics</h1>
+            <div class="stats">
+                <div class="stat"><small>Monthly Revenue</small><strong>₱125,400</strong></div>
+                <div class="stat"><small>Avg. Order Value</small><strong>₱1,458</strong></div>
+                <div class="stat"><small>Units Sold</small><strong>386</strong></div>
+                <div class="stat"><small>Top Product</small><strong>71 sold</strong></div>
+            </div>
+            <div class="chart-grid">
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Revenue by Month</h3><small>Six-month overview</small>
+                        </div>
+                    </div>
+                    <div class="vertical-chart">
+                        <div class="vbar" style="height:44%"><span>₱18k</span></div>
+                        <div class="vbar" style="height:53%"><span>₱22k</span></div>
+                        <div class="vbar" style="height:60%"><span>₱25k</span></div>
+                        <div class="vbar" style="height:67%"><span>₱28k</span></div>
+                        <div class="vbar" style="height:76%"><span>₱32k</span></div>
+                        <div class="vbar" style="height:91%"><span>₱38k</span></div>
+                    </div>
+                    <div class="vbar-labels">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Sales by Category</h3><small>Share of revenue</small>
+                        </div>
+                    </div>
+                    <div class="donut-wrap">
+                        <div class="donut category-donut">
+                            <div class="donut-hole"><strong>100%</strong><small>Mix</small></div>
+                        </div>
+                        <div class="legend">
+                            <p><i class="dot processing"></i>Computer <b>34%</b></p>
+                            <p><i class="dot shipped"></i>Networking <b>28%</b></p>
+                            <p><i class="dot completed"></i>Cables <b>21%</b></p>
+                            <p><i class="dot pending"></i>Electronics <b>17%</b></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="chart-grid">
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Top Products</h3><small>Units sold</small>
+                        </div>
+                    </div>
+                    <div class="bar-chart">
+                        <div><span>Precision Screwdriver</span>
+                            <div class="bar-bg"><i style="width:100%"></i></div><b>71</b>
+                        </div>
+                        <div><span>Cat6 Ethernet Cable</span>
+                            <div class="bar-bg"><i style="width:92%"></i></div><b>65</b>
+                        </div>
+                        <div><span>Wireless Mouse</span>
+                            <div class="bar-bg"><i style="width:85%"></i></div><b>60</b>
+                        </div>
+                        <div><span>RJ45 Crimping Tool</span>
+                            <div class="bar-bg"><i style="width:68%"></i></div><b>48</b>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Business Summary</h3><small>Quick management view</small>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Best Category</td>
+                            <th>Computer</th>
+                        </tr>
+                        <tr>
+                            <td>Best Product</td>
+                            <th>Precision Screwdriver Set</th>
+                        </tr>
+                        <tr>
+                            <td>Low Stock</td>
+                            <th class="alert-text">4 products</th>
+                        </tr>
+                        <tr>
+                            <td>Out of Stock</td>
+                            <th>0 products</th>
+                        </tr>
+                        <tr>
+                            <td>Customer Growth</td>
+                            <th class="trend up">+14%</th>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
