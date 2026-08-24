@@ -1897,7 +1897,7 @@ main {
     position: relative;
     z-index: 2;
     width: min(350px, 42%);
-    min-height: 330px;
+   aspect-ratio: 1 / 1;
     margin: 0;
     padding: 28px;
     display: flex;
@@ -1909,7 +1909,7 @@ main {
     border-radius: 50%;
     background:
         linear-gradient(to top, rgba(4,15,11,.92), rgba(4,15,11,.10)),
-        url("../images/3a3874d6-b2e7-4d14-8397-4d7efabbbf13.png") center/cover no-repeat;
+        url("../images/3a3874d6-b2e7-4d14-8397-4d7efabbbf13.png") center 75%/cover no-repeat;
     box-shadow: 0 25px 55px rgba(0,0,0,.35);
 }
 
@@ -2232,9 +2232,8 @@ footer {
     }
 
     .LabutinCard {
-        width: 100%;
-        min-height: 280px;
-        margin-top: 25px;
+        width: min(280px, 70%);
+        margin: 25px auto 0;
     }
 }
 
@@ -2249,6 +2248,7 @@ footer {
     }
 
     .LabutinCard {
+        width: min(220px, 65%);
         text-align: left;
     }
 
