@@ -17,8 +17,8 @@ Admin: admin@CoreTech.com / admin123
 Customer: customer@example.com / 123456
 
 ## Run
-Open `CoreTech_Submission/index.html` in a browser.
+https://patricklazarra604.github.io/ERP-front-end/CoreTech_SIA%20101/
 
 
 ## Product images
-The product image areas are intentionally blank in this version. Add image files to each `images` folder and set the matching `image` filename in `js/data.js`.
+the images are downloaded from the internet.
