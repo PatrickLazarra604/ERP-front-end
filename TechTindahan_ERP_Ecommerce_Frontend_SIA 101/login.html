@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login | CoreTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login">
+    <div class="loginCard"><a class="logo" href="index.html">Core<span>Tech</span></a>
+        
+        <p>Login as an admin or a costumer</p>
+        <form id="login"><label>Email<input id="email" required></label><label>Password<input id="pass" type="password"
+                    required></label><button class="btn">Login</button></form>
+        <div class="demo">Admin: admin@CoreTech.com / admin123<br>Customer: customer@example.com / 123456</div>
+    </div>
+    <script>login.onsubmit = e => { e.preventDefault(); location.href = email.value === 'admin@CoreTech.com' ? 'admin/dashboard.html' : 'index.html' }</script>
+</body>
+
+</html>

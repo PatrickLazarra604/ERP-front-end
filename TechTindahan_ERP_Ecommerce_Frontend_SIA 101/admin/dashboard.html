@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ERP Dashboard | CoreTech</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="admin">
+        <aside class="side"><a class="logo" href="dashboard.html">CoreTech</a><a class="active"
+                href="dashboard.html">📊 Dashboard</a><a href="products.html">📦 Products</a><a
+                href="inventory.html">🏷️ Inventory</a><a href="orders.html">🛒 Orders</a><a href="customers.html">👥
+                Customers</a><a href="suppliers.html">🚚 Suppliers</a><a href="sales.html">💰 Sales</a><a
+                href="reports.html">📈 Reports</a><a href="../index.html">🛍️ Store</a></aside>
+        <main class="dash">
+            <p>CoreTech ERP</p>
+            <h1>Dashboard</h1>
+            <div class="stats">
+                <div class="stat"><small>Total Sales</small><strong>₱125,400</strong><span class="trend up">▲
+                        12.5%</span></div>
+                <div class="stat"><small>Orders</small><strong>86</strong><span class="trend up">▲ 8.2%</span></div>
+                <div class="stat"><small>Products</small><strong>15</strong><span class="trend neutral">15 active</span>
+                </div>
+                <div class="stat"><small>Low Stock</small><strong>4</strong><span class="trend down">Needs
+                        reorder</span></div>
+            </div>
+            <div class="chart-grid">
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Sales Trend</h3><small>Monthly sales performance</small>
+                        </div><span class="chart-note">Jan–Jun</span>
+                    </div>
+                    <div class="line-chart">
+                        <div class="y-labels"><span>₱30k</span><span>₱20k</span><span>₱10k</span><span>₱0</span></div>
+                        <div class="chart-area">
+                            <div class="grid-lines"><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 600 220"
+                                preserveAspectRatio="none" aria-label="Sales line chart">
+                                <polyline points="10,177 125,150 240,135 355,103 470,78 590,43" fill="none"
+                                    stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <circle cx="10" cy="177" r="6" />
+                                <circle cx="125" cy="150" r="6" />
+                                <circle cx="240" cy="135" r="6" />
+                                <circle cx="355" cy="103" r="6" />
+                                <circle cx="470" cy="78" r="6" />
+                                <circle cx="590" cy="43" r="6" />
+                            </svg>
+                            <div class="x-labels">
+                                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Orders by Status</h3><small>Current order distribution</small>
+                        </div>
+                    </div>
+                    <div class="donut-wrap">
+                        <div class="donut">
+                            <div class="donut-hole"><strong>86</strong><small>Orders</small></div>
+                        </div>
+                        <div class="legend">
+                            <p><i class="dot processing"></i>Processing <b>18</b></p>
+                            <p><i class="dot shipped"></i>Shipped <b>21</b></p>
+                            <p><i class="dot completed"></i>Completed <b>42</b></p>
+                            <p><i class="dot pending"></i>Pending <b>5</b></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="chart-grid">
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Top Categories</h3><small>Sales by product category</small>
+                        </div>
+                    </div>
+                    <div class="bar-chart">
+                        <div><span>Computer</span>
+                            <div class="bar-bg"><i style="width:88%"></i></div><b>₱42.1k</b>
+                        </div>
+                        <div><span>Networking</span>
+                            <div class="bar-bg"><i style="width:72%"></i></div><b>₱34.5k</b>
+                        </div>
+                        <div><span>Cables</span>
+                            <div class="bar-bg"><i style="width:55%"></i></div><b>₱26.7k</b>
+                        </div>
+                        <div><span>Electronics</span>
+                            <div class="bar-bg"><i style="width:35%"></i></div><b>₱15.2k</b>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h3>Inventory Health</h3><small>Stock condition</small>
+                        </div>
+                    </div>
+                    <div class="inventory-meter">
+                        <div class="meter"><i style="width:76%"></i></div>
+                        <div class="meter-labels"><span><b>76%</b> Healthy</span><span><b>24%</b> Needs attention</span>
+                        </div>
+                    </div>
+                    <div class="mini-stats">
+                        <div><strong>11</strong><small>Good stock</small></div>
+                        <div><strong class="alert-text">4</strong><small>Low stock</small></div>
+                        <div><strong>0</strong><small>Out of stock</small></div>
+                    </div>
+                </section>
+            </div>
+            <div class="panels">
+                <section class="panel">
+                    <h3>Recent Orders</h3>
+                    <table>
+                        <tr>
+                            <th>Order</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>#1025</td>
+                            <td>renz Llamado</td>
+                            <td>₱700</td>
+                            <td><span class="badge">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1024</td>
+                            <td>Alayon Alfonso</td>
+                            <td>₱2,499</td>
+                            <td><span class="badge">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1023</td>
+                            <td>Mark Reyes</td>
+                            <td>₱1,250</td>
+                            <td><span class="badge">Pending</span></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="panel">
+                    <h3>Inventory Alerts</h3>
+                    <p>Thermal Paste — <b class="alert-text">3</b></p>
+                    <p>USB-to-LAN Adapter — <b class="alert-text">4</b></p>
+                    <p>LAN Cable Tester — <b>5</b></p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

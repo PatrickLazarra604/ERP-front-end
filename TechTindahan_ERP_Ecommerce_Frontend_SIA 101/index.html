@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CoreTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
+        <nav><a href="index.html" style="color: tomato;">Home</a><a href="products.html">Products</a><a href="orders.html">My Orders</a><a
+                href="cart.html">Cart <b id="cartCount">0</b></a><a href="login.html">Admin / Login</a></nav>
+    </header>
+    <section class="Labutin">
+        <div>
+            <p>Smart Tech. Better Price.</p>
+            <h1>CoreTech — Quality IT Tools That Fit Your Student Budget.</h1>
+            <p>Networking, computer, electronics and everyday IT essentials for Filipino students and beginners.</p><a
+                class="btn" href="products.html">Shop Now</a>
+        </div>
+        <div class="LabutinCard"><strong></strong><small></small></div>
+    </section>
+    <main>
+        <div class="title">
+            <div>
+                <p>POPULAR</p>
+                <h2>Categories</h2>
+            </div>
+        </div>
+        <div class="cats"><a href="products.html?cat=Networking">🌐<b>Networking</b><small>LAN tools &
+                    cables</small></a><a href="products.html?cat=Computer">💻<b>Computer</b><small>Accessories &
+                    parts</small></a><a href="products.html?cat=Electronics">🔌<b>Electronics</b><small>Arduino &
+                    modules</small></a><a href="products.html?cat=Cables">🔗<b>Cables</b><small>Adapters &
+                    connectors</small></a></div>
+        <div class="title">
+            <div>
+                <p>RECOMMENDED</p>
+                <h2>Student Picks</h2>
+            </div><a href="products.html">See all →</a>
+        </div>
+        <div id="featured" class="grid"></div>
+    </main>
+   
+    <script src="js/data.js"></script>
+    <script src="js/customer.js"></script>
+    <script src="js/footer.js"></script>
+    <script>render('featured', products.slice(0, 6));</script>
+
+    <!-- Product Image Popup -->
+<div id="imageModal" class="image-modal" onclick="closeImage(event)">
+    <div class="image-modal-content">
+        <button class="image-close" onclick="closeImage()">×</button>
+
+        <img id="expandedImage" src="" alt="">
+
+        <p id="expandedImageName"></p>
+    </div>
+    
+</div>
+</body>
+
+</html>

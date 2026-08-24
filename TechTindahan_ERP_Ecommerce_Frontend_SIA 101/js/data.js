@@ -1,0 +1,16 @@
+const products = [
+    { id: 1, name: 'RJ45 Crimping Tool', category: 'Networking', price: 350, stock: 10, icon: '🛠️', image: '61st5v+UvxL._AC_SL1500_.jpg', supplier: 'Cebu CoreTech Supplies' },
+    { id: 2, name: 'LAN Cable Tester', category: 'Networking', price: 450, stock: 5, icon: '🌐', image: 'RJ45RJ11CableTesre.png', supplier: 'VisMin IT Depot' },
+    { id: 3, name: 'Cat6 Ethernet Cable', category: 'Cables', price: 180, stock: 22, icon: '🔗', image: 'Cat6_GR__23388.1692388786.png', supplier: 'Cebu CoreTech Supplies' },
+    { id: 4, name: 'Precision Screwdriver Set', category: 'Computer', price: 299, stock: 14, icon: '🔧', image: 'images (1).jpg', supplier: 'Pinoy PC Parts' },
+    { id: 5, name: '4-Port USB Hub', category: 'Computer', price: 599, stock: 9, icon: '🔌', image: 'images (2).jpg', supplier: 'Pinoy PC Parts' },
+    { id: 6, name: 'HDMI Cable', category: 'Cables', price: 250, stock: 18, icon: '📺', image: 'images (3).jpg', supplier: 'Metro Computer Supply' },
+    { id: 7, name: 'Thermal Paste', category: 'Computer', price: 180, stock: 3, icon: '🧊', image: 'images (4).jpg', supplier: 'Pinoy PC Parts' },
+    { id: 8, name: '32GB Flash Drive', category: 'Storage', price: 350, stock: 16, icon: '💾', image: 'images (5).jpg', supplier: 'Metro Computer Supply' },
+    { id: 9, name: '500GB SSD', category: 'Storage', price: 2500, stock: 6, icon: '💿', image: 'wd-blue-mobile-500gb.png', supplier: 'VisMin IT Depot' },
+    { id: 10, name: '8GB DDR4 RAM', category: 'Computer', price: 1200, stock: 8, icon: '🧠', image: 'images (6).jpg', supplier: 'Pinoy PC Parts' },
+    { id: 11, name: 'Mechanical Keyboard', category: 'Computer', price: 1500, stock: 12, icon: '⌨️', image: 'images (7).jpg', supplier: 'Cebu CoreTech Supplies' },
+    { id: 12, name: 'Wireless Mouse', category: 'Computer', price: 550, stock: 20, icon: '🖱️', image: 'images (8).jpg', supplier: 'Metro Computer Supply' },
+    { id: 13, name: 'Computer Cleaning Kit', category: 'Computer', price: 299, stock: 11, icon: '🧹', image: 'images (9).jpg', supplier: 'Cebu CoreTech Supplies' },
+    { id: 14, name: 'Arduino Starter Kit', category: 'Electronics', price: 1200, stock: 7, icon: '🤖', image: 'images (10).jpg', supplier: 'VisMin IT Depot' },
+    { id: 15, name: 'USB-to-LAN Adapter', category: 'Cables', price: 650, stock: 4, icon: '🔌', image: 'images (11).jpg', supplier: 'Metro Computer Supply' }];

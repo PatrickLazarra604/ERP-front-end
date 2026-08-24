@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cart | CoreTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
+        <nav><a href="products.html">Products</a><a href="orders.html">My Orders</a><a href="cart.html" style="color: tomato;">Cart <b
+                    id="cartCount">0</b></a></nav>
+    </header>
+    <main>
+        <p>SHOPPING CART</p>
+        <h1>Your Cart</h1>
+        <div id="cart"></div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/customer.js"></script>
+    <script>renderCart()</script>
+</body>
+
+</html>
