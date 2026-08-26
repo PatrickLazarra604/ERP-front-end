@@ -1,6 +1,19 @@
 # CoreTech — ERP + E-Commerce Frontend
 
-A Filipino-style IT tools shop made as a BSIT frontend school project.
+## 👥 Group Members
+
+This project was developed by:
+Arjay Labutin
+Patrick Lazarra
+Renz Llamado
+Alfonso Alayon
+Andrew Bensurto
+
+
+
+**System Integration and Architecture 101 (SIA 101)**
+
+**Bachelor of Science in Information Technology (BSIT)
 
 ## Interfaces
 1. Customer e-commerce: products, search, cart, checkout demo, orders.
