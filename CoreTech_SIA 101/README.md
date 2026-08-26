@@ -3,11 +3,11 @@
 ## 👥 Group Members
 
 This project was developed by:
-Arjay Labutin
-Patrick Lazarra
-Renz Llamado
-Alfonso Alayon
-Andrew Bensurto
+Arjay Labutin,
+Patrick Lazarra,
+Renz Llamado,
+Alfonso Alayon,
+Andrew Bensurto,
 
 
 
