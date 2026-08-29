@@ -1,26 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cart | CoreTech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
-        <nav><a href="products.html">Products</a><a href="orders.html">My Orders</a><a href="cart.html" style="color: tomato;">Cart <b
-                    id="cartCount">0</b></a></nav>
+    <div class="utility-bar">
+        <div><a href="products.html">Student essentials</a><a href="products.html?cat=Networking">Networking</a><a
+                href="products.html?cat=Electronics">Electronics</a></div>
+        <div><span>Reliable tools. Fair prices.</span></div>
+    </div>
+    <header class="site-header"><a class="brand" href="index.html"><img src="images/coretech-mark.svg"
+                alt=""><span>Core</span>Tech</a>
+        <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                href="products.html">Products</a><a href="orders.html">My orders</a><a href="cart.html"
+                aria-current="page">Cart <b class="cart-count" data-cart-count>0</b></a><a class="nav-login"
+                href="login.html">Log in</a><a class="nav-signin" href="signin.html">Sign up</a></nav>
     </header>
-    <main>
-        <p>SHOPPING CART</p>
-        <h1>Your Cart</h1>
+    <div class="sync-rail" data-sync-rail></div>
+    <main class="container narrow">
+        <div class="page-title">
+            <p class="eyebrow">Your selection</p>
+            <h1>Shopping cart</h1>
+        </div>
         <div id="cart"></div>
     </main>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="js/data.js"></script>
     <script src="js/customer.js"></script>
-    <script>renderCart()</script>
+    <script src="js/footer.js"></script>
+    <script>CoreTechStore.renderCart()</script>
 </body>
 
 </html>

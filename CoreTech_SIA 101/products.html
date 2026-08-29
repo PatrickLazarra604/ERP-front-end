@@ -5,47 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Products | CoreTech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
-        <nav><a href="index.html">Home</a><a href="products.html" style="color: tomato;">Products</a><a href="orders.html">My Orders</a><a
-                href="cart.html">Cart <b id="cartCount">0</b></a><a href="login.html">Admin / Login</a></nav>
+    <div class="utility-bar">
+        <div><a href="products.html">Student essentials</a><a href="products.html?cat=Networking">Networking</a><a
+                href="products.html?cat=Electronics">Electronics</a></div>
+        <div><span>Reliable tools. Fair prices.</span></div>
+    </div>
+    <header class="site-header"><a class="brand" href="index.html"><img src="images/coretech-mark.svg"
+                alt=""><span>Core</span>Tech</a>
+        <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="products.html"
+                aria-current="page">Products</a><a href="orders.html">My orders</a><a href="cart.html">Cart <b
+                    class="cart-count" data-cart-count>0</b></a><a class="nav-login" href="login.html">Log in</a><a
+                class="nav-signin" href="signin.html">Sign up</a></nav>
     </header>
-    <main>
-        <div class="title">
-            <div>
-                <p>SHOP</p>
-                <h1>IT Tools & CoreTech Essentials</h1>
-            </div>
+    <div class="sync-rail" data-sync-rail></div>
+    <main class="container">
+        <div class="page-title">
+            <p class="eyebrow">Catalogue</p>
+            <h1>Find the right tool.</h1>
+            <p class="lead">Practical IT supplies for classes, projects and first builds. Stock counts update live as
+                orders come in.</p>
         </div>
-        <div class="filters"><input id="search" placeholder="Search products..."><select id="cat">
+        <div class="filters"><input id="search" type="search" placeholder="Search products"><select id="category"
+                aria-label="Filter by category">
                 <option value="">All categories</option>
                 <option>Networking</option>
                 <option>Computer</option>
                 <option>Electronics</option>
                 <option>Cables</option>
                 <option>Storage</option>
+            </select>
+            <select id="sort" aria-label="Sort products">
+                <option value="">Sort: featured</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+                <option value="stock">Stock: most available</option>
             </select></div>
-        <div id="list" class="grid"></div>
+        <div id="product-list" class="product-grid"></div>
     </main>
-  
+    <div id="image-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="image-title"
+        onclick="if(event.target===this)CoreTechStore.closeImage()">
+        <div class="modal-card"><button class="modal-close" type="button" aria-label="Close image"
+                onclick="CoreTechStore.closeImage()">×</button><img src="" alt="">
+            <p id="image-title" data-image-title></p>
+        </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="js/data.js"></script>
     <script src="js/customer.js"></script>
     <script src="js/footer.js"></script>
-    <script>setupProducts()</script>
-
-    <!-- Product Image Popup -->
-<div id="imageModal" class="image-modal" onclick="closeImage(event)">
-    <div class="image-modal-content">
-        <button class="image-close" onclick="closeImage()">×</button>
-
-        <img id="expandedImage" src="" alt="">
-
-        <p id="expandedImageName"></p>
-    </div>
-</div>
+    <script>CoreTechStore.setupProducts()</script>
 </body>
 
 </html>

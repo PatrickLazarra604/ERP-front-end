@@ -1,26 +1,38 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>My Orders | CoreTech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>My orders | CoreTech</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
-        <nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="orders.html" style="color: tomato;">My Orders</a><a
-                href="cart.html">Cart <b id="cartCount">0</b></a></nav>
+    <div class="utility-bar">
+        <div><a href="products.html">Student essentials</a><a href="products.html?cat=Networking">Networking</a><a
+                href="products.html?cat=Electronics">Electronics</a></div>
+        <div><span>Reliable tools. Fair prices.</span></div>
+    </div>
+    <header class="site-header"><a class="brand" href="index.html"><img src="images/coretech-mark.svg"
+                alt=""><span>Core</span>Tech</a>
+        <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                href="products.html">Products</a><a href="orders.html" aria-current="page">My orders</a><a
+                href="cart.html">Cart <b class="cart-count" data-cart-count>0</b></a><a class="nav-login"
+                href="login.html">Log in</a><a class="nav-signin" href="signin.html">Sign up</a></nav>
     </header>
-    <main>
-        <p>ACCOUNT</p>
-        <h1>My Orders</h1>
+    <div class="sync-rail" data-sync-rail></div>
+    <main class="container narrow">
+        <div class="page-title">
+            <p class="eyebrow">Order history</p>
+            <h1>Your orders</h1>
+        </div>
         <div id="orders"></div>
     </main>
     <script src="js/data.js"></script>
     <script src="js/customer.js"></script>
-    <script>renderOrders()</script>
+    <script src="js/footer.js"></script>
+    <script>CoreTechStore.renderOrders()</script>
 </body>
 
 </html>

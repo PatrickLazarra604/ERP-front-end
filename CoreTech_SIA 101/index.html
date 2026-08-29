@@ -2,63 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>CoreTech</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CoreTech | Student-ready IT essentials</title>
+  <meta name="description"
+    content="CoreTech — an integrated storefront and inventory system built for an SIA 101 System Integration project.">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <header><a class="logo" href="index.html">Core<span>Tech</span></a>
-        <nav><a href="index.html" style="color: tomato;">Home</a><a href="products.html">Products</a><a href="orders.html">My Orders</a><a
-                href="cart.html">Cart <b id="cartCount">0</b></a><a href="login.html">Admin / Login</a></nav>
-    </header>
-    <section class="Labutin">
-        <div>
-            <p>Smart Tech. Better Price.</p>
-            <h1>CoreTech — Quality IT Tools That Fit Your Student Budget.</h1>
-            <p>Networking, computer, electronics and everyday IT essentials for Filipino students and beginners.</p><a
-                class="btn" href="products.html">Shop Now</a>
-        </div>
-      
+  <div class="utility-bar">
+    <div><a href="products.html">Student essentials</a><a href="products.html?cat=Networking">Networking</a><a
+        href="products.html?cat=Electronics">Electronics</a></div>
+    <div><span>Reliable tools. Fair prices.</span></div>
+  </div>
+  <header class="site-header market-header">
+    <a class="brand" href="index.html"><img src="images/coretech-mark.svg" alt=""><span>Core</span>Tech</a>
+    <form class="header-search" action="products.html" method="get"><label class="sr-only" for="home-search">Search
+        products</label><select aria-label="Search category">
+        <option>All gear</option>
+        <option>Networking</option>
+        <option>Computer</option>
+        <option>Electronics</option>
+        <option>Cables</option>
+      </select><input id="home-search" name="q" type="search"
+        placeholder="Search cables, tools, storage and more"><button type="submit">Search</button></form>
+    <nav class="nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a
+        href="products.html">Products</a><a href="orders.html">Orders</a><a href="cart.html">Cart <b class="cart-count"
+          data-cart-count>0</b></a><a class="nav-login" href="login.html">Log in</a><a class="nav-signin" href="signin.html">Sign up</a></nav>
+  </header>
+
+  <div class="sync-rail" data-sync-rail></div>
+  <main class="market-container">
+    <section class="market-stage" aria-label="CoreTech shopping overview">
+      <aside class="category-rail">
+        <h2><span>☷</span> Categories</h2><a href="products.html?cat=Networking">Networking <b>›</b></a><a
+          href="products.html?cat=Computer">Computer gear <b>›</b></a><a
+          href="products.html?cat=Electronics">Electronics <b>›</b></a><a href="products.html?cat=Cables">Cables &
+          adapters <b>›</b></a><a href="products.html?cat=Storage">Storage <b>›</b></a><a href="products.html">All
+          essentials <b>›</b></a>
+        <div class="rail-note"><span>●</span> Curated for student builds</div>
+      </aside>
+      <div class="market-main">
+        <section class="hero-banner">
+          <a class="hero-banner-link" href="products.html" aria-label="Shop Student Picks">
+            <img src="images/3a3874d6-b2e7-4d14-8397-4d7efabbbf13.png"
+              alt="Student Picks: quality assured IT tools at student-friendly prices">
+          </a>
+        </section>
+        <div class="quick-links"><a href="products.html?cat=Networking"><span>◌</span><b>Networking</b><small>Tools &
+              cables</small></a><a href="products.html?cat=Computer"><span>⌘</span><b>Computer</b><small>Parts &
+              care</small></a><a href="products.html?cat=Electronics"><span>⌁</span><b>Electronics</b><small>Maker
+              basics</small></a><a href="products.html?cat=Cables"><span>↝</span><b>Cables</b><small>Adapters &
+              more</small></a></div>
+      </div>
+      <aside class="popular-panel">
+        <div class="panel-title">
+          <h2>Popular now</h2><a href="products.html">See all</a>
+        </div><a class="popular-item" href="products.html?cat=Networking"><b>01</b><img
+            src="images/RJ45RJ11CableTesre.png" alt="LAN cable tester"><span>LAN Cable Tester<small>Networking
+              essential</small></span></a><a class="popular-item" href="products.html?cat=Storage"><b>02</b><img
+            src="images/wd-blue-mobile-500gb.png" alt="500GB SSD"><span>500GB SSD<small>Fast student
+              storage</small></span></a><a class="popular-item" href="products.html?cat=Computer"><b>03</b><img
+            src="images/images (7).jpg" alt="Mechanical keyboard"><span>Mechanical Keyboard<small>Study-ready
+              setup</small></span></a><a class="popular-item" href="products.html?cat=Cables"><b>04</b><img
+            src="images/Cat6_GR__23388.1692388786.png" alt="Cat6 cable"><span>Cat6 Ethernet Cable<small>Dependable
+              connection</small></span></a>
+      </aside>
     </section>
-    <main>
-        <div class="title">
-            <div>
-                <p>POPULAR</p>
-                <h2>Categories</h2>
-            </div>
-        </div>
-        <div class="cats"><a href="products.html?cat=Networking">🌐<b>Networking</b><small>LAN tools &
-                    cables</small></a><a href="products.html?cat=Computer">💻<b>Computer</b><small>Accessories &
-                    parts</small></a><a href="products.html?cat=Electronics">🔌<b>Electronics</b><small>Arduino &
-                    modules</small></a><a href="products.html?cat=Cables">🔗<b>Cables</b><small>Adapters &
-                    connectors</small></a></div>
-        <div class="title">
-            <div>
-                <p>RECOMMENDED</p>
-                <h2>Student Picks</h2>
-            </div><a href="products.html">See all →</a>
-        </div>
-        <div id="featured" class="grid"></div>
-    </main>
-   
-    <script src="js/data.js"></script>
-    <script src="js/customer.js"></script>
-    <script src="js/footer.js"></script>
-    <script>render('featured', products.slice(0, 6));</script>
 
-    <!-- Product Image Popup -->
-<div id="imageModal" class="image-modal" onclick="closeImage(event)">
-    <div class="image-modal-content">
-        <button class="image-close" onclick="closeImage()">×</button>
-
-        <img id="expandedImage" src="" alt="">
-
-        <p id="expandedImageName"></p>
+    <section class="home-featured">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Recommended for you</p>
+          <h2>Popular student picks.</h2>
+        </div><a class="text-link" href="products.html">View all products →</a>
+      </div>
+      <div id="featured" class="product-grid"></div>
+    </section>
+  </main>
+  <div id="image-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="image-title"
+    onclick="if(event.target===this)CoreTechStore.closeImage()">
+    <div class="modal-card"><button class="modal-close" type="button" aria-label="Close image"
+        onclick="CoreTechStore.closeImage()">×</button><img src="" alt="">
+      <p id="image-title" data-image-title></p>
     </div>
-    
-</div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/customer.js"></script>
+  <script src="js/footer.js"></script>
+  <script>CoreTechStore.render('featured', products.slice(0, 6));</script>
 </body>
 
 </html>
