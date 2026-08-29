@@ -1,8 +1,4 @@
-/* CoreTechStore — shared logic for the customer storefront AND the admin ERP.
-   Both surfaces read the SAME product data + the SAME localStorage state,
-   so a sale made on the storefront (POS) is reflected instantly in the
-   Inventory and Orders views on the admin side — no manual re-entry, no
-   silos. This is the live demonstration of System Integration for SIA-101. */
+
 const CoreTechStore = {
   cartKey: 'coretech.demo.cart.v1',
   orderKey: 'coretech.demo.orders.v1',
